@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+// src/App.js
+import React, { useState } from 'react';
 import './App.css';
+import ProductCard from './components/ProductCard';
+import productsData from './data/products';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Filter products based on search
+  const filteredProducts = productsData.filter((product) =>
+    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>🛍️ E-Commerce Product Listing</h1>
+
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-input"
+      />
+
+      <div className="grid">
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))
+        ) : (
+          <p>No products found.</p>
+        )}
+      </div>
     </div>
   );
 }
