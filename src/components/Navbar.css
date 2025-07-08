@@ -1,0 +1,73 @@
+/* Navbar.css */
+.navbar {
+  background-color: #2874f0;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.search-container input {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar-right a,
+.navbar-right button {
+  text-decoration: none;
+  background-color: white;
+  color: #2874f0;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-right a:hover,
+.navbar-right button:hover {
+  background-color: #f1f1f1;
+}
+
+.orders-btn {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #2874f0;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.orders-btn:hover {
+  background-color: #0b5ed7;
+}

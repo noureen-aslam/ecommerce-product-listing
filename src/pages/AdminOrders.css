@@ -1,0 +1,26 @@
+.admin-orders {
+  padding: 2rem;
+  background: #f4f6f9;
+}
+
+.order-card {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.order-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.order-card ul {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.order-card li {
+  margin-bottom: 4px;
+}

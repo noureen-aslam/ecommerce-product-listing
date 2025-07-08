@@ -1,0 +1,40 @@
+/* src/components/Filters.css */
+
+.filters {
+  width: 220px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  height: fit-content;
+}
+
+.filters h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.filters ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.filters li {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background 0.2s;
+}
+
+.filters li:hover {
+  background: #f1f1f1;
+}
+
+.filters li.active {
+  background-color: #007bff;
+  color: white;
+}
