@@ -13,8 +13,6 @@ app.use(express.json());
 const orderRoutes = require('./routes/orderRoutes');
 app.use('/api/orders', orderRoutes); // ✅ add this line
 
-const orderRoutes = require('./routes/orderRoutes');
-app.use('/api', orderRoutes);
 
 app.use('/api/products', productRoutes);
 app.use('/api', authRoutes); // ✅ Correct base path for /signup
