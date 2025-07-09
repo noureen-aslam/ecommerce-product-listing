@@ -2,6 +2,7 @@
 
 Shophera is a full-stack e-commerce platform built using **React**, **Node.js**, **Express**, and **MongoDB**. It features product listings, user authentication, cart functionality, checkout, order tracking, and an admin panel.
 
+**Video Demo:** https://drive.google.com/file/d/1Xs9RRLvnHvs1REbW7Rc40YwEca9YE1Dm/view?usp=sharing
 ---
 
 ## 🚀 Features
